@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex Scrolling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 id="text">Parallex Website</h2>
+        <img src="images/monutain_01.png" id="m1">   
+        <img src="images/trees_01.png" id="t2">   
+        <img src="images/monutain_02.png" id="m2">   
+        <img src="images/trees_02.png" id="t1">   
+        <img src="images/man.png" id="man">   
+        <img src="images/plants.png" id="plants">   
+    </section>
+    <section class="sec">
+        <h2>Parallax Scroling Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga temporibus ab officia facilis? Totam 
+            delectus iure illum eaaspernatur magnam ad voluptate facilis  molestiae vel sed aperiam obcaecati amet. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores, velit nisi reprehenderit delectus quo vitae, distinctio laborum alias facilis iusto suscipit molestias magni 
+            neque provident. Esse consequatur nemo neque?
+        </p>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+<script>
+    gsap.from("#m1",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        y: 100,
+    })
+    gsap.from("#m2",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        x: 50,
+    })
+    gsap.from("#t2",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        x: -50,
+    })
+    gsap.from("#t1",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        x: 50,
+    })
+    gsap.from("#man",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        x: -250,
+    })
+    gsap.from("#plants",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        x: -50,
+    })
+    gsap.from("#text",{
+        scrollTrigger : {
+            scrub : true 
+        },
+        x: 600,
+    })
+</script>
+</body>
+</html>
